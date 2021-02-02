@@ -36,13 +36,21 @@ body {
   /* fine container small e relativo debug */
 
 .verticalign {
-  position: relative;
+  position: relative; /* l'absolute mi dava problemi, tanto funziona lo stesso per quello che devo fare */
   top: 50%;
   transform: translate(0,-50%);
+}
+.horizontalign {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 a {
   text-decoration: none;
+}
+p > a:not(.soon)::after {
+  content: ' >';
 }
 
 ul.hlist > li {
@@ -55,6 +63,9 @@ ul.hlist > li {
   background-size: cover;
   background-position: center;
 }
+.back-img .text {
+  color: white;
+}
 
 /* fine caratteristiche generiche (riutilizzabili) */
 
@@ -65,17 +76,11 @@ ul.hlist > li {
   top: 0;
   height: 50px;
   font-size: 10px;
-  z-index: 1;
+  z-index: 2;
 }
 #fixed .container-small {
 
 }
-/* #fixed .container-small [class*="col-"] {
-
-} */
-/* #fixed .container-small .container {
-
-} */
 #fixed img {
   vertical-align: middle;
 }
@@ -98,12 +103,6 @@ ul.hlist > li {
 }
 #jumbo.back-img {
   background-image: url(../img/hero-bg.jpg);
-}
-#jumbo .text {
-  width: 50%;
-  margin: 0 auto;
-  text-align: center;
-  color: white;
 }
 
 #products {
@@ -134,6 +133,40 @@ ul.hlist > li {
 }
 #oldman .container > * {
   height: 250px;
+}
+#oldman .text {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#marketing > * {
+  padding: 10px;
+}
+#marketing > *:nth-child(1) .back-img {
+  background-image: url(../img/ScooterHelbiz-2400.jpg);
+}
+#marketing > *:nth-child(1) .text {
+  left: 60%;
+  width: 30%;
+  text-align: center;
+}
+#marketing > *:nth-child(2) > div {
+  background: linear-gradient(#41566a, #252f38);
+  overflow: hidden;
+}
+#marketing > *:nth-child(2) > div img {
+  width: 100%;
+}
+#marketing > *:nth-child(3) .back-img {
+  background-image: url(../img/Cities-1500.jpg);
+}
+
+#social.back-img {
+  background-image: url(../img/Social-Banner.jpg);
+}
+#social .text {
+  color: black;
+  background-color: white;
 }
 
 /* fine caratteristiche specifiche */
