@@ -35,6 +35,37 @@ body {
 
   /* fine container small e relativo debug */
 
+  /* inizio cose relative alla responsiveness */
+
+  [class*="display"] {
+    display: none;
+  }
+
+  @media screen and (max-width: 768px) {
+
+    .xs-display {
+      display: block;
+    }
+
+  }
+
+  @media screen and (max-width: 992px) and (min-width: 768px) {
+
+    .md-display {
+      display: block;
+    }
+
+  }
+
+  @media screen and (min-width: 993px) {
+
+    .lg-display {
+      display: block;
+    }
+
+  }
+  /* fine cose relative alla responsiveness */
+
 .verticalign {
   position: relative; /* l'absolute mi dava problemi, tanto funziona lo stesso per quello che devo fare */
   top: 50%;
