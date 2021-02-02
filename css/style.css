@@ -50,6 +50,11 @@ ul.hlist > li {
   padding: 0 5px;
 }
 
+.back-img {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
 
 /* fine caratteristiche generiche (riutilizzabili) */
 
@@ -91,11 +96,8 @@ ul.hlist > li {
 #jumbo {
   margin-top: 50px; /* per il fixed, provvisoria */
 }
-#jumbo {
-  height: 300px;
+#jumbo.back-img {
   background-image: url(../img/hero-bg.jpg);
-  background-size: cover;
-  background-position: center;
 }
 #jumbo .text {
   width: 50%;
@@ -115,15 +117,23 @@ ul.hlist > li {
   height: 300px;
 }
 
+#oldman .back-img {
+  background-image: url(../img/HelbizBanner.jpg);
+}
 #oldman .special {
   position: relative;
 }
 #oldman .special img {
   position: absolute;
   bottom: 0;
-  width: 100%;
-  height: auto;
+  left: 50%;
+  transform: translate(-50%,0);
+  height: 500px;
+  width: auto;
   z-index: 1;
+}
+#oldman .container > * {
+  height: 250px;
 }
 
 /* fine caratteristiche specifiche */
