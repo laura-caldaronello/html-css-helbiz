@@ -60,6 +60,7 @@ ul.hlist > li {
   top: 0;
   height: 50px;
   font-size: 10px;
+  z-index: 1;
 }
 #fixed .container-small {
 
@@ -101,6 +102,17 @@ ul.hlist > li {
   margin: 0 auto;
   text-align: center;
   color: white;
+}
+
+#products {
+  text-align: center;
+}
+#products .grey {
+  margin: 20px;
+  background-color: lightgrey;
+}
+#products img {
+  height: 300px;
 }
 
 #oldman .special {
