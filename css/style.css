@@ -35,30 +35,6 @@ body {
 
   /* fine container small e relativo debug */
 
-  /* inizio cose relative alla responsiveness */
-
-  [class*="display"] {
-    display: none;
-  }
-  @media screen and (max-width: 768px) {
-
-    .xs-display {
-      display: block;
-    }
-  }
-  @media screen and (max-width: 992px) and (min-width: 768px) {
-    .md-display {
-      display: block;
-    }
-  }
-  @media screen and (min-width: 993px) {
-    .lg-display {
-      display: block;
-    }
-}
-
-  /* fine cose relative alla responsiveness */
-
 .verticalign {
   position: relative; /* l'absolute mi dava problemi, tanto funziona lo stesso per quello che devo fare */
   top: 50%;
@@ -122,6 +98,10 @@ ul.hlist > li {
 #fixed a {
   color: #9b9b9b;
 }
+#fixed i {
+  line-height: 50px;
+  font-size: 20px;
+}
 
 #jumbo {
   margin-top: 50px; /* per il fixed, provvisoria */
@@ -163,23 +143,6 @@ ul.hlist > li {
   width: 50%;
   margin: 0 auto;
 }
-@media screen and (max-width: 768px) {
-  #oldman .special img {
-    max-width: 90%;
-    height: auto;
-    max-height: 500px;
-  }
-}
-@media screen and (max-width: 992px) and (min-width: 768px) {
-  #oldman .special img {
-    max-width: 90%;
-    height: auto;
-    max-height: 500px;
-  }
-}
-@media screen and (min-width: 993px) {
-
-}
 
 #marketing > * {
   padding: 10px;
@@ -212,3 +175,49 @@ ul.hlist > li {
 }
 
 /* fine caratteristiche specifiche */
+
+/* inizio caratteristiche generiche mediaquery */
+
+[class*="display"] {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+
+  .xs-display {
+    display: block;
+  }
+}
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .md-display {
+    display: block;
+  }
+}
+@media screen and (min-width: 993px) {
+  .lg-display {
+    display: block;
+  }
+}
+
+/* fine caratteristiche generiche mediaquery */
+
+/* inizio caratteristiche specifiche mediaquery */
+
+@media screen and (max-width: 768px) {
+  #oldman .special img {
+    max-width: 90%;
+    height: auto;
+    max-height: 500px;
+  }
+}
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  #oldman .special img {
+    max-width: 90%;
+    height: auto;
+    max-height: 500px;
+  }
+}
+@media screen and (min-width: 993px) {
+
+}
+
+/* fine caratteristiche specifiche mediaquery */
