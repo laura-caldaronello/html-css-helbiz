@@ -105,7 +105,7 @@ ul.hlist > li {
 }
 
 #jumbo {
-  margin-top: 50px; /* per il fixed, provvisoria */
+  margin-top: 50px;
 }
 #jumbo.back-img {
   background-image: url(../img/hero-bg.jpg);
