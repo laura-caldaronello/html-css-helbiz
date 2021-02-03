@@ -55,7 +55,7 @@ p > a:not(.soon)::after {
 
 ul.hlist > li {
   display: inline-block;
-  padding: 0 5px;
+  margin: 0 10px 0 0;
 }
 
 .back-img {
@@ -94,6 +94,7 @@ ul.hlist > li {
 }
 #fixed #languages > li:not(:last-child) a {
   border-right: 1px solid #9b9b9b;
+  padding-right: 10px;
 }
 #fixed a {
   color: #9b9b9b;
