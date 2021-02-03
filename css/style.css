@@ -98,7 +98,7 @@ ul.hlist > li {
 #fixed {
   position: fixed;
   top: 0;
-  height: 50px;
+  line-height: 50px;
   font-size: 10px;
   z-index: 2;
   background-color: white;
@@ -116,7 +116,7 @@ ul.hlist > li {
   text-align: right;
   text-transform: uppercase;
 }
-#fixed #languages > li:not(:last-child) {
+#fixed #languages > li:not(:last-child) a {
   border-right: 1px solid #9b9b9b;
 }
 #fixed a {
